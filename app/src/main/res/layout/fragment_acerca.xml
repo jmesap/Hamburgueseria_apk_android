@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcercaFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCursoActual">
+
+            <!-- ImageView LinkedIn -->
+            <ImageView
+                android:id="@+id/ivLinkedin"
+                android:layout_width="45dp"
+                android:layout_height="41dp"
+                android:contentDescription="@string/iv_Linkedin"
+                app:srcCompat="@drawable/logo_linkedin" />
+
+            <!-- TextView LinkedIn -->
+            <TextView
+                android:id="@+id/tvLinkedin"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="5dp"
+                android:text="@string/tv_Linkedin"
+                android:textAlignment="center"
+                android:textColor="#FFFFBC00"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- ImageView Email -->
+            <ImageView
+                android:id="@+id/ivEmail"
+                android:layout_width="45dp"
+                android:layout_height="41dp"
+                android:contentDescription="@string/iv_Email"
+                app:srcCompat="@drawable/baseline_alternate_email_24" />
+
+            <!-- TextView Correo -->
+            <TextView
+                android:id="@+id/tvCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="5dp"
+                android:text="@string/tv_Correo"
+                android:textAlignment="center"
+                android:textColor="#FFFFBC00"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/tvCursoActual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/tv_CursoActual"
+            android:textAlignment="center"
+            android:textColor="#FFFFBC00"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNombreTarea" />
+
+        <TextView
+            android:id="@+id/tvWebPersonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/tv_webPersonal"
+            android:textAlignment="center"
+            android:textColor="#FFFFBC00"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNombreTarea" />
+
+        <TextView
+            android:id="@+id/tvNombreTarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/tv_NombreTarea"
+            android:textAlignment="center"
+            android:textColor="#FFFFBC00"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAcercaDe" />
+
+        <ImageView
+            android:id="@+id/ivLogoJMP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/iv_LogoJMPContentDescription"
+            app:layout_constraintBottom_toTopOf="@+id/tvAcercaDe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logotipo_blanco_jmp" />
+
+        <TextView
+            android:id="@+id/tvAcercaDe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/tv_AcercaDe"
+            android:textAlignment="center"
+            android:textColor="#FFFFBC00"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvNombreTarea"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogoJMP" />
+
+        <Button
+            android:id="@+id/btnAtras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-smallcaps"
+            android:onClick="btnAtras"
+            android:text="@string/btn_atras"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

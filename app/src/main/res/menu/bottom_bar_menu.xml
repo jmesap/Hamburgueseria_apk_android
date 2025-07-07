@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/btn_atras"
+        android:icon="@drawable/baseline_arrow_back_24"
+        android:id="@+id/atras"/>
+
+    <item
+        android:title="@string/btn_limpiar"
+        android:icon="@drawable/baseline_delete_forever_24"
+        android:id="@+id/limpiar" />
+
+    <item
+        android:title="@string/btn_siguiente"
+        android:icon="@drawable/baseline_arrow_forward_24"
+        android:id="@+id/siguiente" />
+
+</menu>

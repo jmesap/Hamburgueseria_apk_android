@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/principalFragment">
+
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="com.example.tarea2_jmp.RegistroFragment"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_registroFragment_to_hamburguesasFragment"
+            app:destination="@id/hamburguesasFragment" />
+        <action
+            android:id="@+id/action_registroFragment_to_principalFragment"
+            app:popUpTo="@id/principalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hamburguesasFragment"
+        android:name="com.example.tarea2_jmp.HamburguesasFragment"
+        android:label="fragment_hamburguesas"
+        tools:layout="@layout/fragment_hamburguesas" >
+        <action
+            android:id="@+id/action_hamburguesasFragment_to_bebidasFragment"
+            app:destination="@id/bebidasFragment" />
+        <action
+            android:id="@+id/action_hamburguesasFragment_to_registroFragment"
+            app:popUpTo="@id/registroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/principalFragment"
+        android:name="com.example.tarea2_jmp.PrincipalFragment"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_principalFragment_to_registroFragment"
+            app:destination="@id/registroFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_ayudaFragment"
+            app:destination="@id/ayudaFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_acercaFragment"
+            app:destination="@id/acercaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bebidasFragment"
+        android:name="com.example.tarea2_jmp.BebidasFragment"
+        android:label="fragment_bebidas"
+        tools:layout="@layout/fragment_bebidas" >
+        <action
+            android:id="@+id/action_bebidasFragment_to_hamburguesasFragment"
+            app:popUpTo="@id/hamburguesasFragment" />
+        <action
+            android:id="@+id/action_bebidasFragment_to_informeFragment"
+            app:destination="@id/informeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/informeFragment"
+        android:name="com.example.tarea2_jmp.InformeFragment"
+        android:label="fragment_informe"
+        tools:layout="@layout/fragment_informe" >
+        <action
+            android:id="@+id/action_informeFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ayudaFragment"
+        android:name="com.example.tarea2_jmp.AyudaFragment"
+        android:label="fragment_ayuda"
+        tools:layout="@layout/fragment_ayuda" >
+        <action
+            android:id="@+id/action_ayudaFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/acercaFragment"
+        android:name="com.example.tarea2_jmp.AcercaFragment"
+        android:label="fragment_acerca"
+        tools:layout="@layout/fragment_acerca" >
+        <action
+            android:id="@+id/action_acercaFragment_to_principalFragment"
+            app:destination="@id/principalFragment" />
+    </fragment>
+</navigation>

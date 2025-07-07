@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main Activity-->
+    <string name="app_name">Homework2_JMP</string>
+    <string name="btn_hacerPedido">Make an order</string>
+    <string name="tv_NombreHamburgueseria">JMP Burger</string>
+
+    <!-- Activity about-->
+    <string name="iv_LogoJMPContentDescription">Personal JMP logo</string>
+    <string name="tv_AcercaDe">About us</string>
+    <string name="iv_Email">Gmail Logo</string>
+    <string name="iv_Linkedin">LinkedIn Logo</string>
+    <string name="tv_Correo">josemesapadilla@gmail.com</string>
+    <string name="tv_Linkedin">https://es.linkedin.com/in/jmesap</string>
+    <string name="tv_CursoActual">MMP 23/24 Academic year</string>
+    <string name="tv_NombreTarea">2nd Proyect - José Mesa Padilla</string>
+
+    <!-- Activity help-->
+    <string name="tv_etiAyuda">HELP</string>
+    <string name="tv_textoAyuda">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porttitor nunc sollicitudin ipsum
+    euismod, nec rhoncus lorem imperdiet. Nulla pulvinar gravida elit vitae congue. Ut massa nibh,
+    mattis et orci et, pretium nunc. Pellentesque rutrum luctus risus in molestie.
+    Mauris lectus ex, pellentesque ut maximus at, pharetra vitae lacus. Suspendisse risus nulla,
+    convallis at convallis sed, tristique at sem. Praesent nisi massa, sollicitudin ut nibh fringilla,
+    placerat luctus nulla. Integer ac tincidunt neque. Proin efficitur pretium bibendum. Nunc vitae orci
+    sit amet sapien semper tristique. Mauris vitae sem eget leo vehicula cursus in rutrum neque.
+    Quisque commodo enim nec neque faucibus pharetra. Suspendisse varius, mi vitae convallis vehicula,
+    lorem diam faucibus magna, et finibus sapien lacus facilisis dolor.
+    Nam eget tempus est. Cras viverra mattis lacus vel congue. Quisque consequat, odio vel scelerisque imperdiet,
+    orci eros rhoncus metus, eget fermentum nisi ex at neque. In et elementum elit, a ullamcorper dui.
+    Proin feugiat placerat tincidunt. Etiam viverra vel risus in blandit. Praesent efficitur vestibulum metus quis eleifend.
+    Donec consequat pellentesque. Vivamus nisl nibh, varius ultricies urna ut, dictum luctus erat.
+    Proin sit amet quam ut ipsum cursus ultrices vel finibus metus. Vestibulum ut consectetur lectus.
+    Morbi tempor vestibulum lacus id vulputate. Donec rutrum massa porttitor, venenatis libero eget, pulvinar risus.
+    Mauris in sem a neque efficitur euismod vulputate id velit. Fusce venenatis elit eu sapien eleifend,
+    cursus luctus dolor porta. Etiam varius odio eu lorem vehicula varius. In convallis dolor augue,
+    nec lobortis dui pretium eu. Aenean vulputate pellentesque ante, et molestie urna accumsan vel.
+    Integer elementum id elit eu hendrerit. Nunc iaculis nec massa id ullamcorper.
+    Mauris ullamcorper malesuada sapien, a rhoncus est feugiat eu. Quisque pretium cursus ultricies.
+    Proin justo felis, consequat eu posuere ac, dignissim vel arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    Nulla risus eros, pellentesque ac ante sit amet, consectetur sollicitudin tortor.
+    Ut congue libero vel purus fringilla, ut sodales purus volutpat. Aliquam erat volutpat.
+    </string>
+
+    <!-- Activity Register-->
+    <string name="registro_title">REGISTER</string>
+    <string name="tv_EtiNombre">"Name: "</string>
+    <string name="et_NombreHint">Type your name</string>
+    <string name="et_TelefonoHint">Type your phone number</string>
+    <string name="tv_EtiRecogida">"Delivery: "</string>
+    <string name="et_DireccionHint">Type your address</string>
+    <string name="spinner_prompt">Choose the delivery method</string>
+    <string-array name="opciones_recogida">
+        <item>Home Delivery</item>
+        <item>Store Pickup</item>
+    </string-array>
+
+    <!-- Activity burgers-->
+    <string name="burgers_title">BURGERS</string>
+    <string name="iv_Burger1ContentDescription">Burger 1 photo</string>
+    <string name="iv_Burger2ContentDescription">Burger 2 photo</string>
+    <string name="iv_Burger3ContentDescription">Burger 3 photo</string>
+    <string name="tv_Burguer1">Jose\'s King\'s Burger</string>
+    <string name="tv_Burguer2">Cheesy Jose\'s</string>
+    <string name="tv_Burguer3">Crunchy Bacon</string>
+    <string name="tv_ImporteBurger1">Amount: 12.00 €</string>
+    <string name="tv_ImporteBurger2">Amount : 13.00 €</string>
+    <string name="tv_ImporteBurguer3">Amount: 11.50 €</string>
+    <string name="btn_aniadirContentDescription">Add another Jose\'s King\'s Burger</string>
+    <string name="btn_aniadirContentDescription2">Add another Cheesy Jose\'s</string>
+    <string name="btn_aniadirContentDescription3">Add another Crunchy Bacon</string>
+    <string name="chk_Vegano">VEGAN</string>
+    <string name="clienteVegano">Vegan customer </string>
+    <string name="clienteNoVegano">Not vegan customer </string>
+    <string name="cantidad">Amount:</string>
+    <string name="precioUnitario">Unit price:</string>
+    <string name="totalHamburguesas">Total burgers:</string>
+    <string name="totalBebidas">Total drinks:</string>
+
+    <!-- Activity drinks-->
+    <string name="bebidas_title">DRINKS</string>
+    <string name="iv_Bebida1ContentDescription">Drink 1 photo</string>
+    <string name="iv_Bebida2ContentDescription">Drink 2 photo</string>
+    <string name="iv_Bebida3ContentDescription">Drink 3 photo</string>
+    <string name="iv_Bebida4ContentDescription">Drink 4 photo</string>
+    <string name="tv_Bebida1">Nestea</string>
+    <string name="tv_Bebida2">Kombucha</string>
+    <string name="tv_Bebida3">Coke</string>
+    <string name="tv_Bebida4">Beer</string>
+    <string name="tv_ImporteBebida1">Amount: 2.50 €</string>
+    <string name="tv_ImporteBebida2">Amount: 3.00 €</string>
+    <string name="tv_ImporteBebida3">Amount: 2.30 €</string>
+    <string name="tv_ImporteBebida4">Amount: 3.20 €</string>
+    <string name="btn_aniadirContentDescriptionBebida1">Add another drink Nestea</string>
+    <string name="btn_aniadirContentDescriptionBebida2">Add another drink pineapple Kombucha</string>
+    <string name="btn_aniadirContentDescriptionBebida3">Add another drink Coke</string>
+    <string name="btn_aniadirContentDescriptionBebida4">Add another drink Beer</string>
+
+    <!-- Activity report-->
+    <string name="informe_title">REPORT</string>
+    <string name="btn_Volver">BACK</string>
+
+    <!-- Different activities common strings-->
+    <string name="btn_aniadir">+</string>
+    <string name="tv_cantidadInicial">0</string>
+    <string name="iv_LogoContentDescription">JMP Burger Logo</string>
+    <string name="tv_EtiTelefono">Phone number:</string>
+    <string name="tv_EtiDireccion">Address:</string>
+
+    <!-- Back, next and clean buttons -->
+    <string name="btn_atras">Back</string>
+    <string name="btn_limpiar">Clean</string>
+    <string name="btn_siguiente">Next</string>
+    <string name="btn_finalizar">Finish</string>
+
+    <!-- Warning messages -->
+    <string name="avisoNombre">To complete the registration, we need you to enter your name.</string>
+    <string name="avisoTelefono">Please fill in your phone number; it is required.</string>
+    <string name="avisoDireccion">Please include a valid address if you choose the home delivery option.</string>
+    <string name="avisoNombreTitulo">Order name is missing</string>
+    <string name="avisoTelefonoTitulo">Incomplete or incorrect phone number</string>
+    <string name="avisoDireccionTitulo">Incomplete shipping details</string>
+    <string name="avisoPositiveButton">OK</string>
+    <string name="toast_pedido_realizado">Your order has been successfully registered</string>
+    <string name="avisoEligeBurger">Choose a burger, please</string>
+    <string name="tv_webPersonal">https://www.josemesa.es</string>
+    <string name="avisoEligeBurgerTitulo">You must choose a burger</string>
+    <string name="iv_tarjeta_contentDescription">Picture corresponding to the product</string>
+    <string name="etiRegistro">REGISTER</string>
+    <string name="finalizar">Finish</string>
+
+    <string name="avisoRecogida">Choose the delivery method, please</string>
+    <string name="tv_precioEuros">X €</string>
+    <string name="tv_nombreProducto">Name of the product</string>
+    <string name="tv_Contador">0</string>
+    <string name="tv_etiFecha">Date:</string>
+    <string name="tv_etiHora">Time:</string>
+    <string name="tv_etiNombre">Name:</string>
+    <string name="tv_etiTelefono">Phone:</string>
+    <string name="tv_etiRecogida">Delivery:</string>
+    <string name="tv_etiProducto">Product</string>
+    <string name="tv_etiUnidad">Unit</string>
+    <string name="tv_etiSubtotal">Subtotal</string>
+    <string name="tv_etiEnvio">Shipping:</string>
+    <string name="tv_etiIva">VAT:</string>
+    <string name="tv_etiTotal">Total:</string>
+    <string name="tv_etiDomicilio">Domicilio:</string>
+    <string name="tituloDialogoVegana">Confirmación</string>
+    <string name="avisoHamburguesaSeleccionada">You are about to select a vegan burger (cheese and meat will be replaced with vegan cheese and tofu). Are you sure?</string>
+    <string name="botonSI">Yes</string>
+    <string name="toast_hamburguesa_vegana_seleccionada">You\'ve chosen a vegan burger</string>
+    <string name="botonNo">No</string>
+    <string name="toast_operacion_cancelada">Operation cancelled</string>
+    <string name="tv_Ayuda">Help</string>
+
+
+</resources>

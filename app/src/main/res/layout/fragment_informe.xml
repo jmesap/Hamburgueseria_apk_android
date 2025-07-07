@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/informe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="?colorSurface"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="50dp"
+                    android:contentDescription="@string/iv_LogoContentDescription"
+                    app:srcCompat="@drawable/logo_sin_fondo" />
+
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="230dp"
+                    android:padding="16dp"
+                    android:stretchColumns="1">
+
+                    <TableRow android:id="@+id/rowFechaHora">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:text="@string/tv_etiFecha"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/md_theme_light_primary" />
+
+                        <TextView
+                            android:id="@+id/tvFecha"
+                            android:layout_width="wrap_content"
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:textAlignment="textStart" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_column="2"
+                            android:padding="3dip"
+                            android:text="@string/tv_etiHora"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/md_theme_light_primary" />
+
+                        <TextView
+                            android:id="@+id/tvHora"
+                            android:layout_width="wrap_content"
+                            android:layout_column="3"
+                            android:padding="3dip"
+                            android:textAlignment="textEnd" />
+
+                    </TableRow>
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="@color/md_theme_light_primary" />
+
+                    <TableRow android:id="@+id/rowNombreRegistro">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_column="0"
+                            android:text="@string/tv_etiNombre"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/md_theme_light_primary" />
+
+                        <TextView
+                            android:id="@+id/tvNombreRegistro"
+                            android:layout_width="wrap_content"
+                            android:layout_span="3"
+                            android:padding="3dip"
+                            android:textAlignment="textStart" />
+                    </TableRow>
+
+
+                    <TableRow android:id="@+id/rowTelefonoRegistro">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_column="0"
+                            android:text="@string/tv_etiTelefono"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/md_theme_light_primary" />
+
+                        <TextView
+                            android:id="@+id/tvTelefonoRegistro"
+                            android:layout_width="wrap_content"
+                            android:layout_span="3"
+                            android:textAlignment="textStart" />
+                    </TableRow>
+
+                    <TableRow android:id="@+id/rowRecogida">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_column="0"
+                            android:text="@string/tv_etiRecogida"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/md_theme_light_primary" />
+
+                        <TextView
+                            android:id="@+id/tvEntrega"
+                            android:layout_width="wrap_content"
+                            android:layout_span="3"
+                            android:padding="3dip"
+                            android:textAlignment="textStart" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/rowDomicilio"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone">
+
+
+                        <TextView
+                            android:id="@+id/tvEtiDomicilio"
+                            android:layout_width="wrap_content"
+                            android:layout_column="0"
+                            android:text="@string/tv_etiDomicilio"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/md_theme_light_primary" />
+
+                        <TextView
+                            android:id="@+id/tvDomicilio"
+                            android:layout_width="wrap_content"
+                            android:layout_span="3"
+                            android:padding="3dip"
+                            android:textAlignment="textStart" />
+                    </TableRow>
+
+                    <TableRow android:background="@color/md_theme_light_primary">
+
+                        <TextView
+                            android:id="@+id/tvCantidadProducto"
+                            android:layout_width="wrap_content"
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:textColor="@color/md_theme_light_onPrimary" />
+
+                        <TextView
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:text="@string/tv_etiProducto"
+                            android:textColor="@color/md_theme_light_onPrimary"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_column="2"
+                            android:padding="3dip"
+                            android:text="@string/tv_etiUnidad"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/md_theme_light_onPrimary"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_column="3"
+                            android:padding="3dip"
+                            android:text="@string/tv_etiSubtotal"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/md_theme_light_onPrimary"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow android:id="@+id/rowHamburguesas">
+
+                        <TextView
+                            android:id="@+id/tvCantidadHamburguesas"
+                            android:layout_width="wrap_content"
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvHamburguesasElegidas"
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvHamburguesaUnitario"
+                            android:layout_column="2"
+                            android:padding="3dip"
+                            android:textAlignment="textEnd"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvHamburguesasSubtotal"
+                            android:layout_column="3"
+                            android:padding="3dip"
+                            android:textAlignment="textEnd"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow android:id="@+id/rowBebidas">
+
+                        <TextView
+                            android:id="@+id/tvCantidadBebidas"
+                            android:layout_width="wrap_content"
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:textSize="12sp" />
+
+                        <TextView
+
+                            android:id="@+id/tvBebidasElegidas"
+                            android:layout_column="0"
+                            android:padding="3dip"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvBebidasUnitario"
+                            android:layout_column="1"
+                            android:padding="3dip"
+                            android:textAlignment="textEnd"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvBebidasSubtotal"
+                            android:layout_column="2"
+                            android:padding="3dip"
+                            android:textAlignment="textEnd"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="@color/md_theme_light_primary" />
+
+                    <TableRow
+                        android:id="@+id/rowSubtotal"
+                        android:textAlignment="textEnd">
+
+
+                        <TextView
+                            android:layout_column="2"
+                            android:text="@string/tv_etiEnvio"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/md_theme_light_primary" />
+
+                        <TextView
+                            android:id="@+id/tvEnvio"
+                            android:layout_width="wrap_content"
+                            android:layout_column="3"
+                            android:textAlignment="textEnd" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/rowIVA"
+                        android:textAlignment="textEnd">
+
+
+                        <TextView
+                            android:layout_column="2"
+                            android:includeFontPadding="false"
+                            android:padding="3dip"
+                            android:text="@string/tv_etiIva"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/md_theme_light_primary"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvIVA"
+                            android:layout_width="wrap_content"
+                            android:layout_column="3"
+                            android:textAlignment="textEnd" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/rowTotal"
+                        android:textAlignment="textEnd">
+
+
+                        <TextView
+                            android:layout_column="2"
+                            android:text="@string/tv_etiTotal"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/md_theme_light_primary" />
+
+                        <TextView
+                            android:id="@+id/tvTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_column="3"
+                            android:textAlignment="textEnd" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/btnVolver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="50dp"
+                    android:onClick="btnPedido"
+                    android:text="@string/btn_Volver" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
